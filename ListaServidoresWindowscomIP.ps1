@@ -46,6 +46,8 @@ foreach ($servidor in $servidores) {
 $resultadosOrdenados = $resultados | Sort-Object -Property LastLogonTimeStamp -Descending
 # Exibe os resultados em uma tabela formatada
 $resultadosOrdenados | Format-Table -AutoSize
+# Grava os resultados em um arquivo CSV
+$resultadosOrdenados | Export-Csv -Path "ServidoresWindows_com_IP.csv" -NoTypeInformation -Encoding UTF8
 
 # Agrupa os servidores por sistema operacional e conta quantos servidores existem para cada sistema
 $contagemSO = $servidores |
