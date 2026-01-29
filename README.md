@@ -3,4 +3,5 @@
 ---
 **1. ListaServidoresWindows.ps1:** lista todos os servidores Windows em um domínio Active Directory, recuperando o atributo LastLogonTimestamp para cada servidor e exibindo os resultados em uma
 tabela formatada ordenada pelo atributo LastLogonTimeStamp em ordem decrescente.
-   
+
+**2. ListaServidoresWindows.ps1:** basicamente o mesmo script anterior, porém recuperando o endereço IP dos servidores ativos.
